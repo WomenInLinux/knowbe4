@@ -1,0 +1,9 @@
+resource "aws_instance" "knowbe4-ami" {
+#       provisioner "local-exec" {
+#               command = "aws ec2 allocate-address --domain ${"aws_vpc.main.id"} "
+#       }
+        ami = "ami-fad25980"
+        instance_type ="t2.micro"
+        associate_public_ip_address = true
+#       vpc_security_group_ids
+}
